@@ -29,6 +29,6 @@ class MySqlGrammar extends IlluminateMySqlGrammar
             return 'from '.$this->wrap($database).'.'.$wrappedTablePrefixed;
         }
 
-        return 'from '.$this->wrapTable($table);
+        return 'from '.$this->getValue($table);
     }
 }
